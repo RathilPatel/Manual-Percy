@@ -1,0 +1,22 @@
+{
+  "name": "percynode",
+  "version": "1.0.0",
+  "description": "this is a node app for manual visual testing for percy",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "snapshots": "percy exec -- node snapshot.js",
+    "app": "percy exec -- node app"
+  },
+  "author": "Mudassar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "sitemap-stream-parser": "^1.7.0" 
+  },
+  "devDependencies": {
+    "@percy/script": "^1.1.0"
+  }
+}
